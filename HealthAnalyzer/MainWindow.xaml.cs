@@ -22,7 +22,7 @@ namespace HealthAnalyzer
     public partial class MainWindow : Window
     {
         private int nDaysCount = 25;
-        private string sStartingDate = "11.07.2020";
+        private string sStartingDate = DateTime.Now.Day.ToString("D2") + "." + DateTime.Now.Month.ToString("D2") + "." + DateTime.Now.Year.ToString("D4");
         private string WCFParams = @".\HealthAnalyzer.wcf";
 
         private double[] dWeights;
